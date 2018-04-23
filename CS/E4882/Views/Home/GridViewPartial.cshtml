@@ -1,0 +1,28 @@
+@functions {
+    void SetFilterRowVisibility(MVCxGridView grid, bool visible){
+        grid.Settings.ShowFilterRow = visible;
+    }
+}
+
+@Html.DevExpress().GridView(settings => {
+    settings.Name = "gv";
+    
+    //built-in callbacks
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "GridViewPartial" };
+    
+    //custom callbacks
+    settings.CustomActionRouteValues = new { Cotroller = "Home", Action = "GridViewCustomActionPartial" };
+    
+    settings.KeyFieldName = "ID";
+    settings.Columns.Add("ID");
+    settings.Columns.Add("Text");
+    
+    settings.ClientSideEvents.BeginCallback = "OnBeginCallback";
+
+    settings.PreRender = (s, e) => {
+        SetFilterRowVisibility(s as MVCxGridView, Convert.ToBoolean(ViewData["AutoFilterRowVisible"]));
+    };
+    settings.BeforeGetCallbackResult = (s, e) => {
+        SetFilterRowVisibility(s as MVCxGridView, Convert.ToBoolean(ViewData["AutoFilterRowVisible"]));
+    };
+}).Bind(Model).GetHtml()

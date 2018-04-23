@@ -1,0 +1,17 @@
+<script type="text/javascript">
+    function OnBeginCallback(s, e) {
+        e.customArgs["visible"] = cbToggle.GetChecked();
+    }
+    function OnCheckedChanged(s, e) {
+        gv.PerformCallback();
+    }
+</script>
+
+@Html.DevExpress().CheckBox(settings => {
+    settings.Name = "cbToggle";
+    settings.Text = "Toggle AutoFilterRow";
+    settings.Checked = Convert.ToBoolean(ViewData["AutoFilterRowVisible"]);
+    settings.Properties.ClientSideEvents.CheckedChanged = "OnCheckedChanged";
+}).GetHtml()
+
+@Html.Action("GridViewPartial", new { visible = ViewData["AutoFilterRowVisible"] })
