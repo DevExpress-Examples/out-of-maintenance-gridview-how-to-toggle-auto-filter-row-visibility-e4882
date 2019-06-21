@@ -7,6 +7,9 @@
 * [Index.cshtml](./CS/E4882/Views/Home/Index.cshtml)
 <!-- default file list end -->
 # GridView - How to toggle Auto Filter Row visibility
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e4882)**
+<!-- run online end -->
 
 
 <p>Starting with v2014 vol 1 (v14.1), it is much easier to accomplish this task via the built-in Context Menu -> Filter Row command. Please refer to the <a href="https://community.devexpress.com/blogs/aspnet/archive/2014/05/12/asp-net-gridview-context-menu-what-39-s-new-in-14-1.aspx">ASP.NET: GridView Context Menu (What's new in 14.1)</a> blog post to learn more about this new feature and the online <a href="http://demos.devexpress.com/aspxgridviewdemos/Columns/ContextMenu.aspx">Context Menu</a> demo to see it in action.<br /><br />This example illustrates how to toggle the Auto Filter Row visibility via a custom MVC GridView callback.</p>
