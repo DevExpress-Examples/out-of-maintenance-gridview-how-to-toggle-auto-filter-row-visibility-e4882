@@ -8,7 +8,7 @@
 <!-- default file list end -->
 # GridView - How to toggle Auto Filter Row visibility
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e4882)**
+**[[Run Online]](https://codecentral.devexpress.com/e4882/)**
 <!-- run online end -->
 
 
