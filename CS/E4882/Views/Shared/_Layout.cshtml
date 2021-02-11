@@ -4,10 +4,14 @@
     <title>@ViewBag.Title</title>
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
     @Html.DevExpress().GetStyleSheets(
-        new StyleSheet { ExtensionSuite = ExtensionSuite.All }
+        new StyleSheet { ExtensionSuite = ExtensionSuite.GridView },
+         new StyleSheet { ExtensionSuite = ExtensionSuite.Editors },
+          new StyleSheet { ExtensionSuite = ExtensionSuite.NavigationAndLayout }
     )
     @Html.DevExpress().GetScripts(
-        new Script { ExtensionSuite = ExtensionSuite.All }
+                new Script { ExtensionSuite = ExtensionSuite.GridView },
+                new Script { ExtensionSuite = ExtensionSuite.Editors },
+                new Script { ExtensionSuite = ExtensionSuite.NavigationAndLayout }
     )
 </head>
 <body>
