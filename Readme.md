@@ -6,10 +6,10 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [HomeController.cs](./CS/E4882/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/E4882/Controllers/HomeController.vb))
-* [DataRepository.cs](./CS/E4882/Models/DataRepository.cs) (VB: [DataRepository.vb](./VB/E4882/Models/DataRepository.vb))
-* **[GridViewPartial.cshtml](./CS/E4882/Views/Home/GridViewPartial.cshtml)**
-* [Index.cshtml](./CS/E4882/Views/Home/Index.cshtml)
+* [HomeController.cs](./CS/DXWebApplication1/Controllers/HomeController.cs) (VB: [HomeController.vb](./VB/DXWebApplication1/Controllers/HomeController.vb))
+* [DataRepository.cs](./CS/DXWebApplication1/Models/DataRepository.cs) (VB: [DataRepository.vb](./VB/DXWebApplication1/Models/DataRepository.vb))
+* **[GridViewPartial.cshtml](./CS/DXWebApplication1/Views/Home/GridViewPartial.cshtml)**
+* [Index.cshtml](./CS/DXWebApplication1/Views/Home/Index.cshtml)
 <!-- default file list end -->
 # GridView - How to toggle Auto Filter Row visibility
 <!-- run online -->
